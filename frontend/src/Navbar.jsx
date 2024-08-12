@@ -1,13 +1,14 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Logo from './movie.png'
 import './Navbar.css'
 
 function BasicExample() {
   return (
     <Navbar expand="lg" className="navbar">
       <Container>
-        <Navbar.Brand href="#home" className='p-2' style={{fontWeight:'500'}}>Recommend AI</Navbar.Brand>
+        <Navbar.Brand href="#home" className='p-2' style={{fontWeight:'500'}}><img src={Logo} alt="" style={{width:'2rem'}}/>&nbsp; Recommend AI</Navbar.Brand> 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto icons">

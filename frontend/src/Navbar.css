@@ -18,3 +18,7 @@
 .icons i:hover{
     color: #ec8e36 !important;
 }
+
+.navbar .navbar-toggler-icon{
+    display: none;
+}
