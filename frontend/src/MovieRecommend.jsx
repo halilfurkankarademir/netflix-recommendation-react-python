@@ -246,6 +246,9 @@ const MovieRecommend = () => {
                     ))}
                 </div>
             </div>
+            <footer>
+                <div className="text-center p-3 footer">A Recommender AI by Halil Furkan Karademir. ©All rights reserved 2024</div>
+            </footer>
         </div>
     );
 };

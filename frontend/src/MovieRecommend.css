@@ -34,7 +34,7 @@ html{
 .search-bar{
     position: relative;
     display: flex;
-    bottom: 6.5rem;
+    bottom: 7.5rem;
     left: 22rem;
     width: 80%;
     height: 1rem;
@@ -83,4 +83,12 @@ h3{
 .spinner-border{
     position: relative;
     left: 34rem;
+}
+.footer{
+    background-color: #090909;
+    color: white;
+    bottom: 0;
+    position: relative;
+    top: 15rem !important;
+    height: 4rem !important;
 }
