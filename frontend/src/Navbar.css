@@ -1,0 +1,20 @@
+.navbar{
+    background-color: #090909 !important;
+    height: 10vh;
+}
+
+.navbar a{
+    color: #ffffff !important;
+}
+.icons{
+    position: relative;
+    left: 90%;
+    font-size: 1.2rem;
+    
+}
+.icons i{
+    transition: all 0.2s ease-in-out;
+}
+.icons i:hover{
+    color: #ec8e36 !important;
+}

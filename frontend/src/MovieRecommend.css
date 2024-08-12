@@ -1,0 +1,70 @@
+html{
+    background-color: #121212;
+}
+
+
+.card{
+    background-color: #ec8e36 !important;
+    border: none !important;
+    outline: none !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    filter: brightness(1.1)
+}
+
+.find-button{
+    background-color: #ec8e36 !important;
+    color: #121212 !important;
+    font-weight: 600 !important ;
+    position: relative;
+    left: 7rem;
+    top: 2px;
+    height: 2rem;
+    text-align: center;
+    margin-left: 1rem;
+    transition:  all 0.3s ease-in-out;
+}
+
+.find-button:hover{
+    background-color: #ffbb7b !important;
+}
+.search-bar{
+    position: relative;
+    display: flex;
+    bottom: 10rem;
+    left: 22rem;
+    width: 80%;
+    height: 1rem;
+}
+
+.react-autosuggest__container {
+    position: relative;
+    width: 120%;
+}
+
+.react-autosuggest__input {
+    width: 200%;  /* Genişliği %100 olarak ayarlayın */
+    padding: 0.5rem;  /* Padding'i optimize edin */
+    height: 2.5rem;  /* Yüksekliği sabitleyin */
+    box-sizing: border-box;  /* Box sizing ile padding ve border'ı dahil edin */
+}
+
+
+.react-autosuggest__suggestions-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;  /* Maksimum yüksekliği ayarlayın */
+    overflow-y: auto;  /* Taşma durumunda dikey kaydırmayı etkinleştirin */
+    z-index: 10;
+    background-color: white;
+}
+h3{
+    position: relative;
+    top: 1rem;
+    color: white !important;
+}
