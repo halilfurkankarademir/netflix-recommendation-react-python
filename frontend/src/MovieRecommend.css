@@ -34,7 +34,7 @@ html{
 .search-bar{
     position: relative;
     display: flex;
-    bottom: 10rem;
+    bottom: 6.5rem;
     left: 22rem;
     width: 80%;
     height: 1rem;
@@ -67,4 +67,16 @@ h3{
     position: relative;
     top: 1rem;
     color: white !important;
+}
+
+.manVector{
+    width: 50%;
+    position: relative;
+    left: 16rem;
+    top: 05rem;
+}
+
+.textExplore{
+    position: relative;
+    top: 5rem;
 }

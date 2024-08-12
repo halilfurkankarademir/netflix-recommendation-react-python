@@ -4,6 +4,7 @@ import Autosuggest from "react-autosuggest";
 import Papa from 'papaparse';
 import './MovieRecommend.css';
 import Navbar from './Navbar'
+import Man from './man.png'
 
 const defaultPosterUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWz9tftw9qculFH1gxieWkxL6rbRk_hrXTSg&s';
 
@@ -141,7 +142,6 @@ const MovieRecommend = () => {
         <div>
             <Navbar></Navbar>
         <div className="container w-75 mt-5">
-            <h3 className="mb-4">Similar Netflix Contents</h3>
             <form onSubmit={handleSubmit} className="mb-4 search-bar">
                 <div className="mb-3">
                     <Autosuggest
@@ -164,6 +164,8 @@ const MovieRecommend = () => {
                     {loading ? "Loading..." : "Show Similars" }
                 </button>
             </form>
+            <h5 className="text-center textExplore"> <em>Start exploring by entering movie/show title!</em></h5>
+            <img src={Man} alt="" className="manVector"/>
             {loading && <div className="spinner-border" role="status"><span className="sr-only"></span></div>}
             {error && <div className="alert alert-danger">{error}</div>}
             <div className="row">
