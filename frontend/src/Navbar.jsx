@@ -8,7 +8,7 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className="navbar">
       <Container>
-        <Navbar.Brand href="/" className='p-2' style={{fontWeight:'500'}}><img src={Logo} alt="" style={{width:'2rem'}}/>&nbsp; Recommender AI</Navbar.Brand> 
+        <Navbar.Brand href="/" className='p-2 brand' style={{fontWeight:'500'}}><img src={Logo} alt="" style={{width:'2rem'}} className='brand-ico'/>&nbsp; Recommender AI</Navbar.Brand> 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto icons">

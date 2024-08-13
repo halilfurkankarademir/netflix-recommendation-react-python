@@ -9,8 +9,7 @@
 .icons{
     position: relative;
     left: 90%;
-    font-size: 1.2rem;
-    
+    font-size: 1.2rem;  
 }
 .icons i{
     transition: all 0.2s ease-in-out;
@@ -21,4 +20,15 @@
 
 .navbar .navbar-toggler-icon{
     display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .brand{
+        font-size: 0.8rem !important;
+        position: relative;
+        bottom: 1rem;
+    }
+    .brand-ico{
+        width: 5% !important;
+    }
 }

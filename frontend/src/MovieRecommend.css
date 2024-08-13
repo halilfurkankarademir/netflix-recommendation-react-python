@@ -1,37 +1,38 @@
-html{
+/* Basic Styles */
+html {
     background-color: #121212;
 }
 
-
-.card{
+.card {
     background-color: #ec8e36 !important;
     border: none !important;
     outline: none !important;
     transition: all 0.3s ease-in-out;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-10px);
-    filter: brightness(1.1)
+    filter: brightness(1.1);
 }
 
-.find-button{
+.find-button {
     background-color: #ec8e36 !important;
     color: #121212 !important;
-    font-weight: 600 !important ;
+    font-weight: 600 !important;
     position: relative;
     left: 7rem;
     top: 2px;
     height: 2rem;
     text-align: center;
     margin-left: 1rem;
-    transition:  all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.find-button:hover{
+.find-button:hover {
     background-color: #ffbb7b !important;
 }
-.search-bar{
+
+.search-bar {
     position: relative;
     display: flex;
     bottom: 7.5rem;
@@ -46,49 +47,80 @@ html{
 }
 
 .react-autosuggest__input {
-    width: 200%;  /* Genişliği %100 olarak ayarlayın */
-    padding: 0.5rem;  /* Padding'i optimize edin */
-    height: 2.5rem;  /* Yüksekliği sabitleyin */
-    box-sizing: border-box;  /* Box sizing ile padding ve border'ı dahil edin */
+    width: 200%;  
+    padding: 0.5rem; 
+    height: 2.5rem;  
+    box-sizing: border-box;  
 }
-
 
 .react-autosuggest__suggestions-container {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    max-height: 200px;  /* Maksimum yüksekliği ayarlayın */
-    overflow-y: auto;  /* Taşma durumunda dikey kaydırmayı etkinleştirin */
+    max-height: 200px;  
+    overflow-y: auto;  
     z-index: 10;
     background-color: white;
 }
-h3{
+
+h3 {
     position: relative;
     top: 1rem;
     color: white !important;
 }
 
-.manVector{
+.manVector {
     width: 50%;
     position: relative;
     left: 16rem;
     top: 05rem;
 }
 
-.textExplore{
+.textExplore {
     position: relative;
     top: 5rem;
 }
-.spinner-border{
+
+.spinner-border {
     position: relative;
     left: 34rem;
 }
-.footer{
-    background-color: #090909;
-    color: white;
-    bottom: 0;
-    position: relative;
-    top: 15rem !important;
-    height: 4rem !important;
+
+
+@media only screen and (max-width: 600px) {
+    .textExplore {
+        position: relative;
+        top: 0rem;
+        font-size: 1rem;
+    }
+    
+    .search-bar {
+        width: 100%;
+        left: -12%;
+        bottom: 6rem;
+        
+    }
+    
+    .find-button {
+        left: 4rem;
+        top: 0rem;
+        height: 2.2rem;
+        overflow: hidden;
+    }
+
+    .manVector {
+        width: 80%;
+        left: 2rem;
+        top: 2rem;
+    }
+    
+    .spinner-border {
+        left: 7rem;
+    }
+    .react-autosuggest__input {
+        height: 0.1rem !important; 
+        font-size: 1rem;
+    }
+    
 }

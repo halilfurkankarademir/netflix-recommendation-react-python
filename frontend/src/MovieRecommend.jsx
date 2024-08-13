@@ -95,7 +95,7 @@ const MovieRecommend = () => {
                         console.error("Error fetching poster:", posterErr);
                         return {
                             title,
-                            description, // Include description in case of error as well
+                            description, 
                             posterUrl: defaultPosterUrl,
                         };
                     }
