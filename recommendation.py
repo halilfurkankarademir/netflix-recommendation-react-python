@@ -12,11 +12,13 @@ filepath = "./netflix_titles.csv"
 
 data = pd.read_csv(filepath)
 data = data.fillna('')
-data['tags'] = data['description'] + " " + data['listed_in'] + " " + data['country'] + " " +data['cast']
+data['tags'] = data['description'] + " " + data['listed_in'] + " " +data['cast']
+
+corpus = data['tags'].tolist()
 
 vectorizer = TfidfVectorizer(stop_words='english')
-vectors = vectorizer.fit_transform(data['tags'].values.astype('U'))
-similarity_matrix = cosine_similarity(vectors)
+vectors = vectorizer.fit_transform(corpus)
+similarity_matrix = cosine_similarity(vectors,vectors)
 
 @app.route('/recommend', methods=['GET'])
 def recommend_movie():
