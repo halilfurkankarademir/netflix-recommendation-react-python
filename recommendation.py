@@ -12,7 +12,7 @@ filepath = "./netflix_titles.csv"
 
 data = pd.read_csv(filepath)
 data = data.fillna('')
-data['tags'] = data['description'] + " " + data['listed_in'] + " " +data['cast']
+data['tags'] = data['description'] + " " + data['listed_in'] + " " +data['country']
 
 corpus = data['tags'].tolist()
 
