@@ -76,7 +76,7 @@ const MovieRecommend = () => {
                             "https://www.omdbapi.com/",
                             {
                                 params: {
-                                    apikey: "fa3e74cc",
+                                    apikey: "",
                                     t: title,
                                 },
                                 timeout: 15000,
