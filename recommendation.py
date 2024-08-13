@@ -30,14 +30,15 @@ def recommend_movie():
     index = data[data['title'] == movie_name].index[0]
     distances = sorted(list(enumerate(similarity_matrix[index])), reverse=True, key=lambda x: x[1])
 
-  
+
     recommendations = [
         {
             'title': data.iloc[i[0]].title,
             'description': data.iloc[i[0]].description
         }
-        for i in distances[1:13] 
+        for i in distances[1:10] 
     ]
+    
 
     return jsonify({'recommendations': recommendations})
 

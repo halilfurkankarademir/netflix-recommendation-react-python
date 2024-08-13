@@ -63,11 +63,10 @@ const MovieRecommend = () => {
                 "http://127.0.0.1:5000/recommend",
                 {
                     params: { movieName },
-                    timeout: 15000,
+                    timeout: 25000,
                 }
             );
 
-            console.log(response.data);
 
             const recommendationsWithPosters = await Promise.all(
                 response.data.recommendations.map(async (recommendation) => {
@@ -86,7 +85,7 @@ const MovieRecommend = () => {
 
                         return {
                             title,
-                            description, // Include description
+                            description, 
                             posterUrl:
                                 data.Poster && data.Poster !== "N/A"
                                     ? data.Poster
